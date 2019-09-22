@@ -9,7 +9,7 @@ import (
 
 
 var SchemeGroupVersion = schema.GroupVersion{
-  Group: "bar.com",
+  Group: "bar",
   Version: "v1alpha1"
 }
 
