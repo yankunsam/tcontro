@@ -7,7 +7,7 @@ import (
 )
 
 var SchemeGroupVersion = schema.GroupVersion{
-	Group:   "bar",
+	Group:   "bar.com",
 	Version: "v1alpha1",
 }
 

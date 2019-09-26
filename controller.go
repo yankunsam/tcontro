@@ -69,7 +69,7 @@ func NewController(
 		deploymentsSynced: deploymentInformer.Informer().HasSynced,
 		hellosLister:      helloInformer.Lister(),
 		hellosSynced:      helloInformer.Informer().HasSynced,
-		workqueue:         workqueue.NewNamedRateLimitingQueue(workqueue.DefaultControllerRateLimiter(), "Hellos"),
+		workqueue:         workqueue.NewNamedRateLimitingQueue(workqueue.DefaultControllerRateLimiter(), "HelloTypes"),
 		recorder:          recorder,
 	}
 	klog.Info("Setting up event handlers")
