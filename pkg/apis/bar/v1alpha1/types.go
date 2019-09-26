@@ -17,11 +17,14 @@ type HelloType struct {
 }
 
 type HelloSpec struct {
-	Message string `json:"message,omitempty"`
+	DeploymentName string `json:"deploymentName"`
+	Replicas       *int32 `json:"replicas"`
+	Message        string `json:"message,omitempty"`
 }
 
 type HelloTypeStatus struct {
-	Name string
+	Name              string
+	AvailableReplicas int32 `json:"availableReplicas"`
 }
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object

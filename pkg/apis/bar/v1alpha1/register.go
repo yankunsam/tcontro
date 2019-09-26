@@ -18,7 +18,7 @@ var (
 )
 
 func init() {
-	localSchemeBuilder.Regisrer(addKnownTypes)
+	localSchemeBuilder.Register(addKnownTypes)
 
 }
 
