@@ -54,3 +54,9 @@ func main() {
 	}
 
 }
+
+func init() {
+	flag.StringVar(&kubeconfig, "kubeconfig", "", "Path to a kube")
+	flag.StringVar(&masterURL, "master", "", "The address")
+
+}
