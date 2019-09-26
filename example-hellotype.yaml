@@ -1,0 +1,7 @@
+apiVersion: bar.com/v1alpha1
+kind: HelloType
+metadata:
+  name: "example-hellotype"
+spec:
+  deploymentName: example-hellotype
+  replicas: 1
